@@ -1,0 +1,13 @@
+train: C:\Users\alaaj\Desktop\reserch\alaa\new yolov11\Hand Gesture Recognition.v1i.yolov11\train\images
+val: C:\Users\alaaj\Desktop\reserch\alaa\new yolov11\Hand Gesture Recognition.v1i.yolov11\valid\images
+test: Hand Gesture Recognition.v1i.yolov11/test/images
+
+nc: 5
+names: ['five', 'four', 'one', 'three', 'two']
+
+roboflow:
+  workspace: lebanese-university-grkoz
+  project: hand-gesture-recognition-y5827
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/lebanese-university-grkoz/hand-gesture-recognition-y5827/dataset/1

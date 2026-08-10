@@ -1,0 +1,199 @@
+# ==========================================================
+# Python
+# ==========================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+venv/
+ENV/
+env/
+myenv/
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+pip-log.txt
+.ipynb_checkpoints
+.venv*/
+venv*/
+قديم/
+وهمي/
+
+# ==========================================================
+# IDE / System
+# ==========================================================
+.vscode/
+.idea/
+*.swp
+.vs/
+.history/
+Thumbs.db
+desktop.ini
+.DS_Store
+*.lnk
+*.url
+*.bak
+*.tmp
+.cache/
+.temp/
+*.cache
+
+# ==========================================================
+# Archives (client deliverables — keep out of GitHub repo
+# ==========================================================
+*.rar
+*.zip
+*.7z
+*.tar
+*.tar.gz
+*.iso
+*.img
+*.apk
+
+# ==========================================================
+# Large Media (exclude all audio/video — keep only small demos if needed)
+# ==========================================================
+*.mp4
+*.mov
+*.wmv
+*.mkv
+*.avi
+*.flv
+*.mp3
+*.wav
+*.flac
+*.aac
+*.ogg
+
+# ==========================================================
+# Large ML models binary weights
+# ==========================================================
+*.safetensors
+*.hdf5
+*.h5
+*.ckpt
+*.bin
+*.pb
+*.onnx
+*.engine
+*.pkl
+*.joblib
+*.sav
+
+# ---- BUT KEEP the small project-author small best models:
+!best.pt
+!last.pt
+!yolo11n.pt
+!yolov8n.pt
+!yolov5s.pt
+!yolov8s.pt
+!label_encoder.joblib
+!label_encoder.pkl
+!sound_classifier.joblib
+!speaker_model.pkl
+!speaker_model_cnn.h5
+!emotion_model.h5
+!emotion_model.keras
+!face_encodings.pkl
+!names.pkl
+!embeddings.pkl
+!data/face_encodings.pkl
+
+# ESC-50 large dataset exclude but keep small audio only demos:
+ESC-50/
+ESC-50-master/
+Tesseract-OCR/
+tesseract-ocr/
+SimpleHTR-master/
+trocr-model/
+trocr-processor/
+WordDetectorNN*/
+face_recognition_models-master/
+stockfish/
+
+# ==========================================================
+# Arduino build output
+# ==========================================================
+*.elf
+*.hex
+*.bin
+
+# ==========================================================
+# Databases / Logs / Temp / Caches
+# ==========================================================
+*.log
+logs/
+*.sqlite3
+*.db
+*.sqlite
+mlruns/
+wandb/
+runs/
+*.tfevents.*
+*.csv
+
+# ==========================================================
+# Secrets — NEVER commit API keys, credentials, GCP service accounts
+# ==========================================================
+.env
+.env.*
+*.env
+secrets.json
+secrets.py
+node_modules/
+package-lock.json
+
+# ---------- GOOGLE CLOUD / GCP SERVICE ACCOUNT KEYS (CRITICAL!) ----------
+# Match ALL patterns like: plante-440018-3361026f63cc.json, *.iam.gserviceaccount.com.json, etc.
+plante-*.json
+*-*-*-*-*-gcp-*.json
+*service_account*.json
+*service-account*.json
+*gserviceaccount*.json
+*gcp-key*.json
+*gcp_key*.json
+*google-cloud-key*.json
+*google_cloud_credentials*.json
+# Any JSON that contains private_key / client_email (GCP / Firebase SA)
+# These are also detected on push by pre-commit hooks; keep list aggressive
+*credentials*.json
+*creds*.json
+firebase-adminsdk*.json
+api-key*.txt
+api_key*.txt
+apikey*.txt
+password*.txt
+*token*.json
+# ---------- CERT / KEY FILES ----------
+*.pem
+*.p12
+*.pfx
+*.key
+*.crt
+*.cer
+*.jks
+*.keystore
+id_rsa*
+id_ed25519*
+.ssh/
+
+# ==========================================================
+# Arduino IDE caches
+# ==========================================================
+.arduinoIDE/
+.pio/
+.piolibdeps/
+.pioenvs/
+arduino_build/
+arduino_cache/
+
+# ==========================================================
+# Nested cloned repo patterns
+# ==========================================================
+**/SimpleHTR-master/.git/**
+**/stockfish/.git/**
+**/WordDetectorNN*/.git/**
+**/face_recognition_models-master/.git/**
